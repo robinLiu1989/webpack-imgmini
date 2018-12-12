@@ -28,9 +28,12 @@ a image compress  use webpack
 7. 在package.json的script中加入以下命令
 
     "copyIn":"node copyin.js",
+    
     "copyOut":"node copyout.js",
+    
     "build":"webpack --config  ./node_modules/webpack-imgmini/webpack.config.js --color --progress ",
+    
     "start":"npm run copyIn && npm run build && npm run copyOut"
 
-8.运行：npm run start
+ 8. 运行：npm run start
 
