@@ -1,6 +1,6 @@
 {
   "name": "webpack-imgmini",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a image compress  use webpack",
   "main": "index.js",
   "bin": "index.js",
@@ -8,7 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js --color --progress"
   },
-  "keywords": ["imgmini","compress","webpack"],
+  "keywords": [
+    "imgmini",
+    "compress",
+    "webpack"
+  ],
   "author": {
     "name": "robin_liu1989",
     "email": "462021522@qq.com"
@@ -23,10 +27,10 @@
   "homepage": "https://github.com/robinLiu1989/webpack-imgmini",
   "license": "MIT",
   "dependencies": {
+    "clean-webpack-plugin": "^1.0.0",
     "file-loader": "^2.0.0",
+    "image-webpack-loader": "^4.6.0",
     "url-loader": "^1.1.2",
-    "webpack": "^3.11.0",
-    "image-webpack-loader": "^4.6.0"
+    "webpack": "^3.11.0"
   }
-
 }
