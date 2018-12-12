@@ -21,7 +21,7 @@ a image compress  use webpack
    
     const copydir=require('webpack-imgmini/copydir')
   
-    copydir('./img/','./node_modules/webpack-imgmini/img/')
+    copydir('./img/','./node_modules/webpack-imgmini/img/','copyIn')
 
 3. touch copyout
     在里面写入以下内容
