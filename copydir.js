@@ -2,6 +2,7 @@ var fs=require('fs');
 var stat=fs.stat;
 
 var copy=function(src,dst){
+
     //读取目录
     fs.readdir(src,function(err,paths){
         console.log(paths)
@@ -43,3 +44,4 @@ var exists=function(src,dst,callback){
     })
 }
 
+module.exports=copy
