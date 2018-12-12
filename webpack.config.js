@@ -40,7 +40,7 @@ module.exports = {
 
     plugins: [
 
-        new CleanWebpackPlugin([path.join(__dirname, './dist')]),
+        new CleanWebpackPlugin(['dist','img']),
 
     ],
 
