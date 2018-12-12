@@ -25,7 +25,8 @@ a image compress  use webpack
 
     copydir('./node_modules/webpack-imgmini/dist/img/','./output/')
 
-7.在package.json的script中加入以下命令
+7. 在package.json的script中加入以下命令
+
     "copyIn":"node copyin.js",
     "copyOut":"node copyout.js",
     "build":"webpack --config  ./node_modules/webpack-imgmini/webpack.config.js --color --progress ",
