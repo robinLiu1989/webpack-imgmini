@@ -3,7 +3,7 @@ a image compress  use webpack
 
 运用webpack批量压缩图片的小工具
 
-下载依赖：
+一、下载依赖：
 1. 新建项目目录 mkdir demo
 
 2. cd demo && npm init -y 
@@ -11,18 +11,21 @@ a image compress  use webpack
 3. npm i webpack-imgmini  --save
 
 
-使用步骤：
+
+二、使用步骤：
 1. mkdir img && mkdir output
    将要压缩的图片放入img
 
 2. touch copyin
    在里面写入以下内容
+   
     const copydir=require('webpack-imgmini/copydir')
-    
+  
     copydir('./img/','./node_modules/webpack-imgmini/img/')
 
 3. touch copyput
-     在里面写入以下内容
+    在里面写入以下内容
+     
     const copydir=require('webpack-imgmini/copydir')
     
     copydir('./node_modules/webpack-imgmini/dist/img/','./output/')
@@ -37,5 +40,6 @@ a image compress  use webpack
     
     "start":"npm run copyIn && npm run build && npm run copyOut"
 
- 5. 运行：npm run start
+ 三、 运行：
+     npm run start
 
