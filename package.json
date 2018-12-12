@@ -1,6 +1,6 @@
 {
   "name": "webpack-imgmini",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a image compress  use webpack",
   "main": "index.js",
   "bin": "index.js",
