@@ -1,7 +1,16 @@
 var fs=require('fs');
 var stat=fs.stat;
+var deldir=require('./deldir')
+const makedir=require('./makedir')
 
-var copy=function(src,dst){
+
+
+var copy=function(src,dst,type){
+
+    if(type=='copyIn'){
+        deldir('./img/')
+        makedir('./img/')
+    }
 
     //读取目录
     fs.readdir(src,function(err,paths){
