@@ -1,5 +1,5 @@
 const path = require('path');
-var ImageminPlugin = require('imagemin-webpack-plugin').default
+
 
 
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 10000,
+                            limit: 1,
                             name: 'img/[name].[ext]'
                         }
                     },
@@ -37,18 +37,6 @@ module.exports = {
     node: {
         fs: 'empty'
     },
-
-    // plugins: [
-    //     // Make sure that the plugin is after any plugins that add images
-    //     new ImageminPlugin({
-    //         disable: process.env.NODE_ENV !== 'production',
-    //         pngquant: {
-    //             quality: '95-100'
-    //         }
-    //     })
-    // ]
-
-
 
 
 };
